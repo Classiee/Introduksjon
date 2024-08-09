@@ -1,11 +1,9 @@
-/* Basic Reset */
 body, html, .header, .container, .content {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Header styling */
 .header {
     width: 100%;
     padding: 20px;
@@ -18,23 +16,22 @@ body, html, .header, .container, .content {
     text-align: center;
 }
 
-/* Content layout */
+
 .container {
     padding: 20px;
 }
 
-/* Flexbox layout for content sections */
 .content {
     display: flex;
     justify-content: space-between;
-    align-items: stretch; /* Make all sections stretch to the same height */
-    border: 2px solid #333; /* Border around the content area */
+    align-items: stretch; 
+    border: 2px solid #333; 
     padding: 10px;
 }
 
 .hobbyer {
     width: 20%;
-    border-right: 2px solid #333; /* Border to the right of the hobbies section */
+    border-right: 2px solid #333;
     padding-right: 10px;
 }
 
@@ -50,61 +47,78 @@ body, html, .header, .container, .content {
     flex: 1;
     display: flex;
     justify-content: center;
-    border-left: 2px solid #333; /* Border to the left of the image section */
+    border-left: 2px solid #333; 
     padding-left: 10px;
 }
 
 .image img {
     max-width: 100%;
-    border: 2px solid #333; /* Border around the image */
+    border: 2px solid #333;
 }
 
-.image2 {
-    width: 100%;
-    display: flex;
-    object-fit: contain;
-    object-fit: scale-down;
-    object-position: left;
-    margin: auto;
-
+.footer {
+    display: flex;        
+    justify-content: center;
+    align-items: center;    
+    gap: 450px;              
+    padding: 20px;
 }
 
-.image3 {
-    display: flex;
-    object-fit: contain;
-    object-fit: scale-down;
-    margin: auto;
-    width: 200px;
-    height: 100px;
-    object-position: auto;
-}
+.footer img {
+    height: 100px;         
+    width: auto;    
+    
+}       
 
-.image4 {
-    display: flex;
-    object-fit: contain;
-    object-fit: scale-down;
-    margin: auto;
-    width: 50px;
-    height: 10px;
-    object-position: auto;
-}
-
-/* Button styling */
-#changeBackground {
-    margin-left: 20px; /* Space between image and button */
+.changeBackground {
+    margin-left: 20px;
     margin-right: 20px;
     padding: 30px 20px;
     border: none;
-    background-color: #1a2221; /* Button background color */
-    color: white; /* Text color */
+    background-color: #1a2221; 
+    color: white; 
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s; /* Smooth color transition */
+    transition: background-color 0.3s; 
     display: flex;
 }
 
-.button {padding: 32px 32px;}
+.button {
+    padding: 50px 32px;
+    text-align: center;
+}
+
+.button button {
+    background-color: #4CAF50; 
+    color: white;             
+    border: none;              
+    padding: 15px 30px;        
+    text-align: center;        
+    text-decoration: none;     
+    display: inline-block;     
+    font-size: 16px;          
+    font-weight: bold;        
+    border-radius: 8px;       
+    cursor: pointer;          
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.button button:hover {
+    background-color: #45a049; 
+    transform: scale(1.05);    
+}
+
+.button button:active {
+    background-color: #3e8e41; 
+    transform: scale(1.02);    
+}
+
+.button button:focus {
+    outline: none;            
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 p {
     line-height: .5;
     text-align: center;

@@ -4,26 +4,8 @@ var colorButton = document.querySelector(".myClass");
 colorButton.addEventListener("click", colorChange);
 
 function changeColor() {
-
-    var colorSet = [{
-        background: "#f7c5cc",
-        text: "#cc313d"
-      },
-      {
-        background: "#000",
-        text: "#fff"
-      },
-      {
-        background: "#fff",
-        text: "#000"
-      },
-      {
-        background: "#234e70",
-        text: "#fbf8be"
-      },
-      {
-        background: "#fcedda",
-        text: "#ee4e34"
-      },
-    ];
+  const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  
+ 
+  document.body.style.backgroundColor = randomColor;
 }
